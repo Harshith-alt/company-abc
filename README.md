@@ -32,32 +32,35 @@ cd server
 
 ## 🛠️ Setup Instructions
 
-### 📦 1. Clone the Repository
+###  1. Clone the Repository
 
 ```bash
 git clone https://github.com/Harshith-alt/company-abc.git
 cd company-abc
 ```
-### Frontend
+### 2. Frontend
 cd client
 npm install
 npm start
 
-### backend setup 
+### 3. backend setup 
 Java 17+
 Maven
 MySQL running
 Create MySQL DB:  CREATE DATABASE abcdb;
-### Configure DB in server/src/main/resources/application.properties:
+### 4. Configure DB in server/src/main/resources/application.properties:
 spring.datasource.url=jdbc:mysql://localhost:3306/abcdb
+
 spring.datasource.username=root
+
 spring.datasource.password=yourpassword
+
 spring.jpa.hibernate.ddl-auto=update
-### run springboot server
+### 5. run springboot server
 cd server
 ./mvnw spring-boot:run
 
-### API Documentation
+### 6. API Documentation
 | Endpoint       | Method | Description         |
 | -------------- | ------ | ------------------- |
 | /api/heading | GET  | Get current heading |
